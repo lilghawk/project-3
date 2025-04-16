@@ -4,7 +4,7 @@ body {
   font-family: 'Roboto', 'Georgia', serif;
   background-color: #f5f5f5;
   max-width: 80%;
-  margin: 0 auto; 
+  margin: 0 auto;
   padding: 0 1rem;
 }
 
@@ -25,17 +25,17 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #ff69b4; 
+  color: #ff69b4;
   font-weight: bold;
 }
 
 nav a:hover {
-  color: #ec407a; 
+  color: #ec407a;
 }
 
 h1, h2 {
   font-family: Georgia, serif;
-  color: #ff69b4; 
+  color: #ff69b4;
   margin-bottom: 0.5rem;
 }
 
@@ -53,5 +53,56 @@ p, li {
 }
 
 a {
-  color: #ff69b4; 
+  color: #ff69b4;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-color: #f0f0f0;
+    max-width: 90%;
+    padding: 0 2rem;
+  }
+
+  header {
+    padding: 3rem 0;
+  }
+
+  nav ul {
+    justify-content: space-around;
+    gap: 2rem;
+  }
+
+  section {
+    padding: 2rem;
+  }
+
+  p, li {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    max-width: 1200px;
+    background-color: #ffffff;
+  }
+
+  nav ul {
+    gap: 3rem;
+  }
+
+  header {
+    padding: 4rem 0;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .sub-title {
+    font-size: 1.3rem;
+    color: #666;
+  }
 }
